@@ -1,0 +1,55 @@
+// Arquivo de dados centralizado para notícias (pode ser substituído por banco de dados ou API real)
+const noticias = [
+  {
+    id: 1,
+    titulo: 'Novo Zelda é anunciado para Switch',
+    texto: 'A Nintendo revelou o novo título da franquia Zelda, prometendo inovações e gráficos impressionantes. O novo jogo trará um vasto mundo aberto, novas mecânicas de exploração e uma história envolvente que promete surpreender até os fãs mais antigos. Segundo a Nintendo, a equipe de desenvolvimento está focada em entregar uma experiência épica, com trilha sonora marcante e desafios inéditos. Mais detalhes serão revelados em breve, mas a expectativa já é enorme entre os jogadores.',
+    categoria: 'Games',
+    fonte: 'IGN Brasil',
+    url: 'https://br.ign.com/zelda/123456/noticia/novo-zelda-anunciado',
+    data: '2025-11-16',
+    imagem: 'https://static.wikia.nocookie.net/zelda_gamepedia_en/images/9/9d/BotW_Link.png',
+  },
+  {
+    id: 2,
+    titulo: 'PlayStation 6 pode chegar em 2026, diz rumor',
+    texto: 'Fontes do setor sugerem que a Sony já está desenvolvendo o PlayStation 6, com lançamento previsto para 2026. Rumores indicam que o novo console terá hardware ainda mais potente, foco em realidade virtual e integração total com serviços na nuvem. Especialistas acreditam que a Sony pretende revolucionar a experiência gamer, trazendo recursos inovadores e exclusivos para a próxima geração. A empresa, no entanto, ainda não confirmou oficialmente as informações.',
+    categoria: 'Games',
+    fonte: 'Eurogamer',
+    url: 'https://www.eurogamer.net/ps6-2026-rumor',
+    data: '2025-11-15',
+    imagem: 'https://static.wikia.nocookie.net/logopedia/images/8/8a/PlayStation_2023.svg',
+  },
+  {
+    id: 3,
+    titulo: 'Marvel anuncia nova fase do MCU',
+    texto: 'A Marvel Studios revelou os próximos filmes e séries da Fase 6 do Universo Cinematográfico Marvel. Entre os destaques estão novas aventuras dos Vingadores, a introdução de heróis inéditos e crossovers aguardados pelos fãs. O estúdio promete expandir ainda mais o universo, conectando histórias do cinema e do streaming. Os anúncios foram recebidos com entusiasmo e já geram teorias sobre o futuro dos personagens.',
+    categoria: 'Geek',
+    fonte: 'Omelete',
+    url: 'https://www.omelete.com.br/marvel-cinema/fase-6-anuncio',
+    data: '2025-11-14',
+    imagem: 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/7/7e/Marvel_Studios_Logo.png',
+  },
+  {
+    id: 4,
+    titulo: 'Star Wars: Nova série live-action confirmada',
+    texto: 'A Lucasfilm confirmou uma nova série de Star Wars para o Disney+, focada em personagens inéditos. A produção promete explorar novos cantos da galáxia, trazendo tramas originais e visuais impressionantes. O elenco ainda não foi divulgado, mas a expectativa é de que a série traga participações especiais e referências aos filmes clássicos. Fãs aguardam ansiosos por mais informações e trailers.',
+    categoria: 'Geek',
+    fonte: 'Jovem Nerd',
+    url: 'https://jovemnerd.com.br/star-wars-nova-serie/',
+    data: '2025-11-13',
+    imagem: 'https://static.wikia.nocookie.net/starwars/images/6/6e/StarWarsLogo.png',
+  },
+  {
+    id: 5,
+    titulo: 'Matrix 5 está em produção',
+    texto: 'A Warner Bros. confirmou que Matrix 5 está em desenvolvimento, com Lana Wachowski na direção. O novo filme promete expandir o universo criado nos anos 90, trazendo de volta temas filosóficos e cenas de ação inovadoras. Rumores apontam para o retorno de personagens icônicos e a introdução de novos protagonistas. A produção está cercada de mistério, mas já movimenta a comunidade geek e cinéfila.',
+    categoria: 'Filmes',
+    fonte: 'Kotaku',
+    url: 'https://kotaku.com/matrix-5-confirmado',
+    data: '2025-11-12',
+    imagem: 'https://static.wikia.nocookie.net/matrix/images/6/6a/Matrix_Logo.png',
+  },
+]
+
+export default noticias

@@ -1,0 +1,37 @@
+{
+  "categories": [
+    {
+      "id": "albion",
+      "name": "Albion Online",
+      "aulas": [
+        {
+          "titulo": "Como começar em Albion Online",
+          "descricao": "Guia para iniciantes no Albion Online.",
+          "youtubeId": "dQw4w9WgXcQ"
+        }
+      ]
+    },
+    {
+      "id": "minecraft",
+      "name": "Minecraft",
+      "aulas": [
+        {
+          "titulo": "Primeiros passos no Minecraft",
+          "descricao": "Aprenda a sobreviver e construir.",
+          "youtubeId": "eY52Zsg-KVI"
+        }
+      ]
+    },
+    {
+      "id": "Blue",
+      "name": "Blueprotocol",
+      "aulas": [
+        {
+          "titulo": "AUla Teste",
+          "descricao": "Da a bunda",
+          "youtubeId": "t7Y7QBfzcQc"
+        }
+      ]
+    }
+  ]
+}

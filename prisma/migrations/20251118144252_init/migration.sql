@@ -1,0 +1,29 @@
+-- RedefineTables
+PRAGMA defer_foreign_keys=ON;
+PRAGMA foreign_keys=OFF;
+CREATE TABLE "new_User" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "email" TEXT NOT NULL,
+    "password" TEXT NOT NULL,
+    "globalName" TEXT NOT NULL,
+    "username" TEXT NOT NULL,
+    "provider" TEXT NOT NULL DEFAULT 'local',
+    "bio" TEXT,
+    "avatar" TEXT,
+    "avatarOriginal" TEXT,
+    "isAdmin" BOOLEAN NOT NULL DEFAULT false,
+    "isBanned" BOOLEAN NOT NULL DEFAULT false,
+    "avatarZoom" REAL,
+    "avatarOffsetX" REAL,
+    "avatarOffsetY" REAL,
+    "avatarRotation" REAL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL
+);
+INSERT INTO "new_User" ("avatar", "avatarOffsetX", "avatarOffsetY", "avatarOriginal", "avatarRotation", "avatarZoom", "bio", "createdAt", "email", "globalName", "id", "isAdmin", "password", "provider", "updatedAt", "username") SELECT "avatar", "avatarOffsetX", "avatarOffsetY", "avatarOriginal", "avatarRotation", "avatarZoom", "bio", "createdAt", "email", "globalName", "id", "isAdmin", "password", "provider", "updatedAt", "username" FROM "User";
+DROP TABLE "User";
+ALTER TABLE "new_User" RENAME TO "User";
+CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
+CREATE UNIQUE INDEX "User_username_key" ON "User"("username");
+PRAGMA foreign_keys=ON;
+PRAGMA defer_foreign_keys=OFF;

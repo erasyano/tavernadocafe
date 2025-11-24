@@ -1,0 +1,69 @@
+model Sorteio {
+  id          String   @id @default(uuid())
+  titulo      String
+  descricao   String?
+  premio      String
+  dataFim     DateTime
+  criadoEm    DateTime @default(now())
+  ativo       Boolean  @default(true)
+  imagemUrl   String?
+}
+// Prisma schema for SQLite user storage
+// Execute: npx prisma migrate dev --name init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id          String   @id @default(uuid())
+  email       String   @unique
+  password    String
+  globalName  String
+  username    String   @unique
+  provider    String   @default("local") // 'local' ou 'discord'
+  bio         String?
+  avatar      String?
+  avatarOriginal String?
+  isAdmin     Boolean  @default(false)
+  isBanned    Boolean  @default(false)
+  avatarZoom     Float?   // Zoom do avatar
+  avatarOffsetX  Float?   // Offset horizontal do avatar
+  avatarOffsetY  Float?   // Offset vertical do avatar
+  avatarRotation Float?   // Rotação do avatar
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  news        News[]
+  announcements Announcement[]
+}
+
+model News {
+  id        String   @id @default(uuid())
+  title     String
+  content   String
+  image     String?
+  category  String?
+  destaque  Boolean  @default(false)
+  author    User     @relation(fields: [authorId], references: [id])
+  authorId  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  published Boolean  @default(false)
+}
+
+model Announcement {
+  id        String   @id @default(uuid())
+  title     String
+  content   String
+  image     String?
+  author    User     @relation(fields: [authorId], references: [id])
+  authorId  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  published Boolean  @default(false)
+}

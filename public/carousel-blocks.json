@@ -1,0 +1,81 @@
+{
+  "blocks": [
+    {
+      "key": "vermelho",
+      "label": "Vermelho",
+      "color": "#ff4d4d",
+      "titulo": "Vermelho TEXTE",
+      "texto": "Conteúdo do bloco vermelho.",
+      "imagem": "https://assets.albiononline.com/uploads/media/default/media/f281142b2ed9b5e0db079f3632b3156b85961401.jpeg",
+      "url": ""
+    },
+    {
+      "key": "verde",
+      "label": "Verde",
+      "color": "#4dff88",
+      "titulo": "Verde",
+      "texto": "Conteúdo do bloco verde.",
+      "imagem": "https://assets.albiononline.com/uploads/media/default/media/78a5e51b8a2f8c1022354b9c7a9e28a5c0dec35f.jpeg"
+    },
+    {
+      "key": "amarelo",
+      "label": "Amarelo",
+      "color": "#ffe066",
+      "titulo": "Amarelo",
+      "texto": "Conteúdo do bloco amarelo.",
+      "imagem": "https://assets.albiononline.com/uploads/media/default/media/thumb_/media/635a6c17caa20_default_12col.jpeg"
+    },
+    {
+      "key": "laranja",
+      "label": "Laranja",
+      "color": "#ff9900",
+      "titulo": "Laranja",
+      "texto": "Conteúdo do bloco laranja.",
+      "imagem": "https://assets.albiononline.com/uploads/media/default/media/thumb_/media/690b27e5e0e0c_default_12col.jpeg"
+    },
+    {
+      "key": "roxo",
+      "label": "Roxo",
+      "color": "#a259f7",
+      "titulo": "Roxo",
+      "texto": "Conteúdo do bloco roxo.",
+      "imagem": "https://assets.albiononline.com/uploads/media/default/media/thumb_/media/5be565255f463_default_12col.jpeg"
+    },
+    {
+      "key": "azul",
+      "label": "Azul",
+      "color": "#4d8cff",
+      "titulo": "Azul",
+      "texto": "Conteúdo do bloco azul.",
+      "imagem": "https://i.imgur.com/KmNlquq.jpg"
+    }
+  ],
+  "destaques": [
+    {
+      "titulo": "teste 1",
+      "imagem": "https://assets.albiononline.com/uploads/media/default/media/2f7c23d8e55fd9f1efe5c7fcb4774d1c4c093b5d.jpeg",
+      "url": ""
+    },
+    {
+      "titulo": "teste 2",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKUokCeEU3rtpER54t9wS9kcKVLXvcUpGUbKDOQUpEAo4NPntGOTKPr4bn2iu9MPv3cbI&usqp=CAU",
+      "url": ""
+    },
+    {
+      "titulo": "teste 3",
+      "imagem": "https://uploads.golmedia.net/uploads/articles/article_media/946867521714391172gol1.jpg",
+      "url": ""
+    },
+    {
+      "titulo": "teste 4",
+      "imagem": "https://i.pinimg.com/736x/a5/0b/73/a50b7349e8aa748f1d2f2942e1fc5b12.jpg",
+      "url": ""
+    },
+    {
+      "titulo": "teste 5",
+      "imagem": "https://preview.redd.it/hello-albion-online-community-i-noticed-that-not-many-of-us-v0-sn16pckf36je1.png?auto=webp&s=5701e3753663112ef4f4a2ba7a2194bec8a0fde6",
+      "url": ""
+    }
+  ],
+  "videoId": "NJuIOgQitgk"
+}
